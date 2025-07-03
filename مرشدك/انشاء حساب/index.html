@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مرشدك</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="mb-8"></div>
+
+        <div class="logo-container">
+            <a class="logo">
+                <img src="../assets/images/logo_header.svg" alt="">
+            </a>
+        </div>
+        <div class="welcome-text">
+            <h2>إنشاء حساب جديد</h2>
+            <p>قم بإنشاء حساب للوصول إلى تجربتك التعليمية الشخصية</p>
+        </div>
+
+        <div class="registration-form">
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="fullName">الاسم الكامل</label>
+                    <div class="input-group">
+                        <i class="ri-user-line"></i>
+                        <input type="text" id="fullName" name="fullName" required placeholder="أدخل اسمك الكامل">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="universityId">الرقم الجامعي</label>
+                    <div class="input-group">
+                        <i class="ri-id-card-line"></i>
+                        <input type="number" id="universityId" name="universityId" required
+                            placeholder="أدخل الرقم الجامعي الخاص بك">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">البريد الإلكتروني</label>
+                    <div class="input-group">
+                        <i class="ri-mail-line"></i>
+                        <input type="email" id="email" name="email" required placeholder="أدخل بريدك الإلكتروني">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">كلمة المرور</label>
+                    <div class="input-group">
+                        <i class="ri-lock-line"></i>
+                        <input type="password" id="password" name="password" required placeholder="أدخل كلمة المرور">
+                        <div class="password-toggle-container">
+                            <input type="checkbox" id="passwordToggle" class="password-toggle">
+                            <label for="passwordToggle" class="password-toggle-icon">
+                                <i class="ri-eye-line show"></i>
+                                <i class="ri-eye-off-line hide"></i>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">تأكيد كلمة المرور</label>
+                    <div class="input-group">
+                        <i class="ri-lock-line"></i>
+                        <input type="password" id="confirmPassword" name="confirmPassword" required
+                            placeholder="أعد إدخال كلمة المرور">
+                        <div class="password-toggle-container">
+                            <input type="checkbox" id="confirmPasswordToggle" class="password-toggle">
+                            <label for="confirmPasswordToggle" class="password-toggle-icon">
+                                <i class="ri-eye-line show"></i>
+                                <i class="ri-eye-off-line hide"></i>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="terms-group">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">
+                        <span class="checkbox"></span>
+                        <span class="terms-text">أوافق على <a href="#">الشروط والأحكام</a> و <a href="#">سياسة
+                                الخصوصية</a></span>
+                    </label>
+                </div>
+
+                <button type="submit" class="register-btn">
+
+                    <div class="btn-content">
+
+                        <i class="ri-user-add-line"></i>
+
+                        <span>إنشاء حساب</span>
+
+                    </div>
+
+                </button>
+
+                <div class="login-link">
+                    <p>لديك حساب بالفعل؟ <a href="../لوجن/index.html">تسجيل الدخول</a></p>
+                </div>
+            </form>
+        </div>
+        <div class="security-indicators">
+            <div class="security-item">
+                <i class="ri-shield-check-line"></i>
+                <span>تسجيل دخول آمن</span>
+            </div>
+            <div class="divider"></div>
+            <div class="security-item">
+                <i class="ri-verified-badge-line"></i>
+                <span>معتمد من الجامعة</span>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <div class="footer-links">
+                <a href="#">المساعدة والدعم</a>
+                <a href="#">سياسة الخصوصية</a>
+                <a href="#">شروط الخدمة</a>
+            </div>
+            <p>© 2025 المساعد الأكاديمي الجامعي. جميع الحقوق محفوظة.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

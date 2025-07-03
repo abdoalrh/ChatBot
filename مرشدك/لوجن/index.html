@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >مرشدك</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+      
+        
+      
+        <div class="logo-container">
+            <a  class="logo" href="#">
+                <img src="../assets/images/logo_header.svg" alt="">
+            </a>
+        </div>
+        
+      
+        <div class="welcome-container">
+            <h2>مرحباً بك في المساعد الأكاديمي</h2>
+            <p>سجل الدخول باستخدام معرف الجامعة للوصول إلى تجربتك التعليمية الشخصية</p>
+        </div>
+        
+       
+        <div class="login-form-container">
+            <form id="loginForm">
+              
+                <div class="form-group">
+                    <label for="universityId">الرقم الجامعي</label>
+                    <div class="input-wrapper">
+                        <i class="ri-user-line input-icon"></i>
+                        <input type="text" id="universityId" name="universityId" required placeholder="أدخل الرقم الجامعي الخاص بك">
+                    </div>
+                </div>
+                
+               
+                <div class="form-group">
+                    <label for="password">كلمة المرور</label>
+                    <div class="input-wrapper">
+                        <i class="ri-lock-line input-icon"></i>
+                        <input type="password" id="password" name="password" required placeholder="أدخل كلمة المرور">
+                        <div class="password-toggle-container">
+                            <input type="checkbox" id="passwordToggle" class="password-toggle">
+                            <label for="passwordToggle" class="password-toggle-icon">
+                                <i class="ri-eye-line show"></i>
+                                <i class="ri-eye-off-line hide"></i>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="remember-me">
+                    <input type="checkbox" id="rememberMe" class="remember-checkbox">
+                    <label for="rememberMe" class="remember-label">
+                        <span class="checkbox-custom"></span>
+                        <span class="checkbox-text">تذكرني</span>
+                    </label>
+                </div>
+                
+              
+                <button type="submit" class="login-button">
+                    <div class="button-content">
+                        <i class="ri-login-box-line"></i>
+                        <span>تسجيل الدخول</span>
+                    </div>
+                    <div class="button-overlay"></div>
+                </button>
+                
+               
+                <div class="forgot-password">
+                    <a href="../انشاء حساب/index.html">نسيت كلمة المرور؟</a>
+                </div>
+            </form>
+        </div>
+        
+       
+        <div class="security-indicators">
+            <div class="security-item">
+                <i class="ri-shield-check-line"></i>
+                <span>تسجيل دخول آمن</span>
+            </div>
+            <div class="security-divider"></div>
+            <div class="security-item">
+                <i class="ri-verified-badge-line"></i>
+                <span>معتمد من الجامعة</span>
+            </div>
+        </div>
+        
+        
+        <div class="footer">
+            <div class="footer-links">
+                <a href="#">المساعدة والدعم</a>
+                <a href="#">سياسة الخصوصية</a>
+                <a href="#">شروط الخدمة</a>
+            </div>
+            <p>© 2025 المساعد الأكاديمي الجامعي. جميع الحقوق محفوظة.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

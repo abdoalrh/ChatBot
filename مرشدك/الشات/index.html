@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مرشدك</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="#" class="logo">
+                    <img src="../assets/images/logo_header.png" alt="">
+                </a>
+                
+                
+                <div class="title-container">
+                    <span class="title">المحادثة مع المساعد الجامعي</span>
+                </div>
+            </div>
+            <div class="user-actions">
+                <button class="action-btn">
+                    <i class="ri-settings-3-line"></i>
+                    <span>الإعدادات</span>
+                </button>
+                <button class="action-btn">
+                    <i class="ri-history-line"></i>
+                    <span>السجل</span>
+                </button>
+                <div class="user-avatar">
+                    <i class="ri-user-line"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main class="main-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h3 class="sidebar-title">المحادثات السابقة</h3>
+                <div class="search-container">
+                    <input type="text" placeholder="بحث في المحادثات..." class="search-input">
+                    <i class="ri-search-line search-icon"></i>
+                </div>
+            </div>
+            <div class="conversation-list">
+                <div class="conversation-item active">
+                    <div class="conversation-header">
+                        <span class="conversation-title">تسجيل المواد</span>
+                        <span class="conversation-time">منذ 2 دقيقة</span>
+                    </div>
+                    <p class="conversation-preview">كيف يمكنني تسجيل المواد للفصل القادم؟</p>
+                </div>
+                <div class="conversation-item">
+                    <div class="conversation-header">
+                        <span class="conversation-title">الجدول الدراسي</span>
+                        <span class="conversation-time">اليوم</span>
+                    </div>
+                    <p class="conversation-preview">مساعدة في تنظيم الجدول الدراسي</p>
+                </div>
+                <div class="conversation-item">
+                    <div class="conversation-header">
+                        <span class="conversation-title">المتطلبات السابقة</span>
+                        <span class="conversation-time">أمس</span>
+                    </div>
+                    <p class="conversation-preview">ما هي متطلبات مادة الرياضيات المتقدمة؟</p>
+                </div>
+            </div>
+        </aside>
+        
+        <section class="chat-container">
+            <div class="messages-container">
+                <div class="message bot-message">
+                    <div class="message-content">
+                        <div class="message-avatar bot-avatar">
+                            <i class="ri-robot-line"></i>
+                        </div>
+                        <div class="message-text">
+                            <p>مرحباً بك! أنا مساعدك الجامعي الذكي. كيف يمكنني مساعدتك اليوم؟</p>
+                            <div class="suggestions-container">
+                                <button class="suggestion-chip">تسجيل المواد</button>
+                                <button class="suggestion-chip">تنظيم الجدول الدراسي</button>
+                                <button class="suggestion-chip">معلومات عن المواد</button>
+                                <button class="suggestion-chip">المتطلبات السابقة</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="message user-message">
+                    <div class="message-content user-content">
+                        <div class="message-avatar user-avatar">
+                            <i class="ri-user-line"></i>
+                        </div>
+                        <div class="message-text">
+                            <p>أريد المساعدة في تسجيل المواد للفصل الدراسي القادم</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="message bot-message">
+                    <div class="message-content">
+                        <div class="message-avatar bot-avatar">
+                            <i class="ri-robot-line"></i>
+                        </div>
+                        <div class="message-text">
+                            <p>بالتأكيد! لمساعدتك بشكل أفضل، هل يمكنك تزويدي بالمعلومات التالية:</p>
+                            <ul class="bot-list">
+                                <li>ما هو تخصصك الحالي؟</li>
+                                <li>في أي مستوى دراسي أنت الآن؟</li>
+                                <li>هل لديك مواد محددة ترغب في تسجيلها؟</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="message-input-container">
+                <div class="input-wrapper">
+                    <textarea placeholder="اكتب رسالتك هنا..." class="message-input"></textarea>
+                    <div class="input-actions">
+                        <button class="input-action-btn">
+                            <i class="ri-attachment-2-line"></i>
+                        </button>
+                      
+                        <button class="input-action-btn">
+                            <i class="ri-image-line"></i>
+                        </button>
+                    </div>
+                </div>
+                <button class="send-btn">
+                    <i class="ri-send-plane-line"></i>
+                    إرسال
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
